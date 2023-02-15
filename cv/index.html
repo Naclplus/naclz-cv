@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Page Flip Layout | Codrops</title>
+		<meta name="description" content="A template with a two-sided, magazine-like layout and a flat page flip animation" />
+		<meta name="keywords" content="grid, pageflip, reveal, animation, layout, book, magazine, web design, template, demo" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+			<svg id="icon-nav" viewBox="0 0 152 63">
+				<title>navarrow</title>
+				<path d="M115.737 29L92.77 6.283c-.932-.92-1.21-2.84-.617-4.281.594-1.443 1.837-1.862 2.765-.953l28.429 28.116c.574.57.925 1.557.925 2.619 0 1.06-.351 2.046-.925 2.616l-28.43 28.114c-.336.327-.707.486-1.074.486-.659 0-1.307-.509-1.69-1.437-.593-1.442-.315-3.362.617-4.284L115.299 35H3.442C2.032 35 .89 33.656.89 32c0-1.658 1.143-3 2.552-3H115.737z"/>
+			</svg>
+		</svg>
+		<main>
+			<p class="message">请在PC浏览器中查看完整效果</p>
+			<div class="slideshow">
+				<div class="slide slide--layout-1 slide--current">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/1.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center slide__figure-content-vertical">
+								<h3>Welcome to riding NaclZ's CV</h3>
+								<h4>Be developer from 2012</h4>
+								<p>Email to:<a href="mailto:1259678404@qq.com" target="_blank" class="self_link"> 1259678404@qq.com</a></p>
+								<p>Telgram:<a href="https://t.me/naclzzz" target="_blank" class="self_link">@naclzzz</a></p>
+								<p><a href="cv.doc" target="_blank" class="self_link">Download CV</a></p>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">个人简介</h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/2.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center slide__figure-content-vertical">
+								<ul>
+									<li>熟练使用HTML、CSS、Javascript等web客户端技术</li>
+									<li>熟练使用前端框架bootstrap、JQuery、react、vue等框架，熟悉ES6，ES7规范</li>
+									<li>熟练使用数据可视化引擎（echarts，antv(g2)）</li>
+									<li>熟练使用前端自动化构建工具grunt、glup、webpack</li>
+									<li>熟悉后端语言JAVA 熟练使用SpringBoot开发各类型Web应用程序经验</li>
+									<li>熟悉后端语言PHP 有使用ThinkPHP开发个人网站经验</li>
+									<li>熟悉主流数据库Mysql、SQLServer</li>
+								</ul>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">专业技能</h3>
+							<p class="slide__figure-description"></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left">1</span>
+					<span class="slide__number slide__number--right">2</span>
+				</div>
+				<div class="slide slide--layout-2">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/3.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								webpack插件项目, 适用于移动端 style 属性中 px转换成rem单位。<br/>
+								解决移动端中必要使用px单位的场景，无法自适应的问题。<br/>
+								参考与(postcss-px2rem)项目
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">vue-style-px2rem-loader</h3>
+							<a class="slide__figure-description" href="https://github.com/Naclplus/vue-style-px2rem-loader">https://github.com/Naclplus/vue-style-px2rem-loader</a>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/4.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								基于Vue.js 2.x开发的移动端UI库<br/>
+								- 支持按需引入<br/>
+								- 组件库样式基于Stylus开发，可通过全局和组件的样式变量对主题样式进行调整<br/>
+								- 内置NucChart组件, 基于F2@蚂蚁金服(MIT license)封装的图表组件。<br/>
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">nuc-mobile</h3>
+							<a class="slide__figure-description" href="https://github.com/Naclplus/nuc-mobile">https://github.com/Naclplus/nuc-mobile</a>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/5.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								Vuex插件, 解决异步调用时自动装载调用开始与结束状态。 <br />
+								在store中注册loading模块，在action调用时在该模块中注入同名的state <br />
+								- 用于需要清楚异步action执行状态时使用, 比如按钮等需要loading状态时, 使其方便使用。
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">nacl-vuex-loading</h3>
+							<a class="slide__figure-description" href="https://github.com/Naclplus/nacl-vuex-loading">https://github.com/Naclplus/nacl-vuex-loading</a>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left">3</span>
+					<span class="slide__number slide__number--right">4</span>
+				</div>
+				<div class="slide slide--layout-3">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/6.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								微信小程序项目。美团、饿了么外卖券、淘宝、京东购物券3级分销程序。<br />
+								- 使用Vant组件库开发<br />
+								- 使用mobx-miniprogram进行状态管理<br />
+								- 使用Spring Boot进行后台开发。启用定时任务拉取个人分销通道订单，根据用户分销层级进行佣金分配。<br />
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">快脚外卖券</h3>
+							<p class="slide__figure-description">微信小程序-美团、饿了么、淘宝、京东CPS分销程序</p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/7.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								PHP web程序。<br />
+								- 使用ThinkPHP框架开发后端渲染web程序。<br />
+								- 使用Python 爬取制定网站资源。并进行解压、 上传、 打包、 上传网盘<br />
+								- 使用七牛云私有空间管理图片、视频资源, 防止盗链。并根据会员等级限制清晰度、以及水印<br />
+								- 使用ffmpeg 将MP4格式视频转换成M3U8格式并添加水印上传。 前端使用DPlayer添加对TLS格式视频的播放<br />
+								- 自定义会员系统， 自定义会员时长、会员功能限制、资源次数限制<br />
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">秀人阁</h3>
+							<p class="slide__figure-description"><a href="https://www.xiurenge.com">https://www.xiurenge.com</a></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/8.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								后台脚本程序。 YouGov有偿问卷自动化程序。<br />
+								自动注册Outlook邮箱，自动过Outlook Captcha。<br />
+								自动注册YouGov账号，自动接收邮箱验证码。<br />
+								自动登录YouGov账号，监听Point点数<br />
+								循环监听所有注册邮箱收件箱，如有有偿回答问卷，提交给消息队列<br />
+								消息队列监听问卷、并自动回答赚取点数<br />
+								- 使用SpringBoot进行开发<br />
+								- 使用WebDriver - ChromeSelenium进行网站自动化脚本<br />
+								- 使用java-mail imaps协议获取收件箱内容<br />
+								- 使用RabbitMQ实现消息系统<br />
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">YouGov 自动化投票问卷系统</h3>
+							<p class="slide__figure-description">投票赚取佣金</p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left">5</span>
+					<span class="slide__number slide__number--right">6</span>
+				</div>
+				<div class="slide slide--layout-4">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/9.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								- 使用Vue、Vue-Router 搭建前台App项目<br />
+								- 使用自开发库nuc-mobile 完成页面UI开发<br />
+								- 使用nuc-mobile图表插件引擎开发图形报表功能<br />
+								- 使用自开发incent-api-sdk库，使其完成Websocket Api的Promise实现<br />
+								- 持续集成jenkins<br />
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">盈盛期货平台</h3>
+							<p class="slide__figure-description">国际期货平台、提供国际期货行情、模拟盘操作</p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/10.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								- 开发云服务实例微服务、（开通云实例、实例启停、销毁）编写后台标准的Restful API接口<br />
+								- 开发费用告警、实例告警微服务、并发送短信以及邮件<br />
+								- 使用React+dva+ant-design搭建前台App项目<br />
+								- 使用antv（g2）图表插件引擎开发图形报表功能<br />
+								- 使用iText + Freemarker 开发基于HTML模板的pdf导出<br />
+								- 持续集成jenkins配置 webhook配置<br />
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">秩云CloudExp</h3>
+							<p class="slide__figure-description">云商费用管理平台（AWS、阿里云、Azure）、并给出优化建议、费用超出预算告警、账单导出等</p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/11.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								- 引导小组完成前端的技术选型、以及响应式页面设计、百分比页面布局设计<br />
+								- 使用HTML/Css/Javascript编写符合W3C标准的前端页面<br />
+								- 使用Swiper2作为页面轮播图插件<br />
+								- 使用CSS3编写响应式移动端侧边导航<br />
+								- 引入html5shiv框架使IE8+支持HTML5标签<br />
+								- 使用respond.js框架使IE8+支持媒体查询 避免百分比布局小分辨率造成的页面样式错乱<br />
+								- 配合后台人员完成页面静态化、解决静态化分页问题<br />
+								- 持续跟踪维护已知bug、SEO的优化<br />
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">柯莱特(camelot)官网</h3>
+							<p class="slide__figure-description"><a href="https://www.camelotchina.com/">https://www.camelotchina.com/</a></p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/12.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								- 使用React + Webpack作为技术栈开发<br />
+								- 使用ThreeJS 开发主页地球效果<br />
+								- 配合UE动效师，完善用户体验<br />
+								- App端内嵌页面，使用JSBridge调用原生API实现需求<br />
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">滴滴出行Global</h3>
+							<p class="slide__figure-description"><a href="https://www.didiglobal.com/">https://www.didiglobal.com/</a></p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left">7</span>
+					<span class="slide__number slide__number--right">8</span>
+				</div>
+				<div class="slide slide--layout-5">
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/13.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								- 确定开发流程、使用JIRA管理项目、从发起ISSUE到Create Branch规范化、使用Git rebase管理分支模型、使其项目历史清晰、易部署、易回退、易选功能上线<br />
+								- 对接产品需求<br />
+								- 日常开发维护、code review<br />
+								- 技术栈调研讨论，并实际应用<br />
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">延边薇美铺</h3>
+							<p class="slide__figure-description">2021.02 - 2023.02</p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/14.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								- 旧平台代码开发重构<br />
+								- UI组件库开发、业务SDK的开发<br />
+								- 马甲包开发<br />
+								- Jenkins项目构建， 多渠道自动打包Android APK， 使非开发人员可以独立打包马甲程序。 为开发人员节省时间、以及沟通成本<br />
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">盈盛科技有限公司</h3>
+							<p class="slide__figure-description">2019.08 - 2020.01</p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/15.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								- 与产品经理协作，完成平台的后台与前台业务代码<br />
+								- 配合UI、UE改善产品用户体验<br />
+								- 及时跟踪Bug、并及时修复<br />
+								- 持续迭代产品<br />
+								- 了解公有（AWS、阿里、Azure）、私有云（OpenStack）服务<br />
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">北京秩云科技有限公司</h3>
+							<p class="slide__figure-description">2017.03 - 2018.12</p>
+						</figcaption>
+					</figure>
+					<figure class="slide__figure">
+						<div class="slide__figure-inner">
+							<div class="slide__figure-img" style="background-image: url(img/16.jpg)"></div>
+							<div class="slide__figure-content slide__figure-content-center">
+								- 与产品经理、后台研发团队协作，完成网站及移动端前端的设计和开发<br />
+								- 配合产品经理，研究并改善产品的用户体验<br />
+								- 维护和优化相关项目的页面，持续提升用户体验<br />
+								- 追踪测试提出的bug，及时发现问题并跟踪反馈、修复<br />
+								- 担当代码QA、把控前端开发人员的代码规范、代码整洁度以及应该避免出现的代码问题<br />
+								- 与后台人员直接对接数据接口、实现产品功能的页面最终展示<br />
+								- 管理前端组的HTTP、FTP服务<br />
+							</div>
+							<div class="slide__figure-reveal"></div>
+						</div>
+						<figcaption>
+							<h3 class="slide__figure-title">北京科莱特信息技术有限公司</h3>
+							<p class="slide__figure-description">2015.10 - 2017.02</p>
+						</figcaption>
+					</figure>
+					<span class="slide__number slide__number--left">9</span>
+					<span class="slide__number slide__number--right">10</span>
+				</div>
+				<!-- revealer -->
+				<div class="revealer">
+					<div class="revealer__item revealer__item--left"></div>
+					<div class="revealer__item revealer__item--right"></div>
+				</div>
+				<nav class="arrow-nav">
+					<button class="arrow-nav__item arrow-nav__item--prev">
+						<svg class="icon icon--nav"><use xlink:href="#icon-nav"></use></svg>
+					</button>
+					<button class="arrow-nav__item arrow-nav__item--next">
+						<svg class="icon icon--nav"><use xlink:href="#icon-nav"></use></svg>
+					</button>
+				</nav>
+				<!-- navigation -->
+				<nav class="nav">
+					<button class="nav__button">
+						<span class="nav__button-text">索引</span>
+					</button>
+					<h2 class="nav__chapter">个人简介</h2>
+					<div class="toc">
+						<a class="toc__item" href="#entry-1">
+							<span class="toc__item-page">01.</span>
+							<span class="toc__item-title">个人简介</span>
+						</a>
+						<a class="toc__item" href="#entry-2">
+							<span class="toc__item-page">03.</span>
+							<span class="toc__item-title">个人项目-开源插件</span>
+						</a>
+						<a class="toc__item" href="#entry-3">
+							<span class="toc__item-page">05.</span>
+							<span class="toc__item-title">个人项目-Web应用</span>
+						</a>
+						<a class="toc__item" href="#entry-4">
+							<span class="toc__item-page">07.</span>
+							<span class="toc__item-title">公司项目-在职项目</span>
+						</a>
+						<a class="toc__item" href="#entry-5">
+							<span class="toc__item-page">09.</span>
+							<span class="toc__item-title">工作经历</span>
+						</a>
+					</div>
+				</nav>
+				<!-- little sides -->
+				<div class="slideshow__indicator"></div>
+				<div class="slideshow__indicator"></div>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/progressbar.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>
